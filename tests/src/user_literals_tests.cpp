@@ -129,3 +129,8 @@ TEST(UserLiterals, uintptrCheker)
     static_assert(std::is_same_v<decltype(101_uintptr), std::uintptr_t>,
                   "Invalid type.");
 }
+
+TEST(UserLiterals, byteCheker)
+{
+    static_assert(std::is_same_v<decltype(101_b), std::byte>, "Invalid type.");
+}

@@ -109,4 +109,9 @@ constexpr std::uintptr_t operator"" _uintptr(unsigned long long v)
     return static_cast<std::uintptr_t>(v);
 }
 
+constexpr std::byte operator"" _b(unsigned long long v) noexcept
+{
+    return static_cast<std::byte>(v);
+}
+
 #endif /* user_literals_h */
