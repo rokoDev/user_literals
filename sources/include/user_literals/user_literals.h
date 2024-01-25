@@ -114,4 +114,9 @@ constexpr std::byte operator"" _b(unsigned long long v) noexcept
     return static_cast<std::byte>(v);
 }
 
+constexpr std::ptrdiff_t operator"" _ptrdiff(unsigned long long v) noexcept
+{
+    return static_cast<std::ptrdiff_t>(v);
+}
+
 #endif /* user_literals_h */
